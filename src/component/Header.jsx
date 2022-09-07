@@ -180,7 +180,7 @@ function Header() {
         </p>
       </div>
       <section className="h-fit lg:h-screen    bg-gray-200 relative  ">
-        <div className="bg-white rounded-2xl lg:w-fit w-[80%]  absolute -top-[200px] text-black left-1/2 -translate-x-1/2 p-8  lg:p-12">
+        <div className="bg-white rounded-2xl lg:w-fit sm:w-[80%] w-4/6  absolute -top-[200px] text-black left-1/2 -translate-x-1/2 p-8  lg:p-12">
           <div className="lg:flex-row flex flex-col lg:space-y-0 space-y-6 lg:space-x-8">
             <input
               className="outline-none border-b-[1px] text-xl lg:w-96 border-gray-400 placeholder:text-gray-700 placeholder:text-2xl p-1 "
@@ -219,8 +219,8 @@ function Header() {
             onClick={Bit}
             className={
               One
-                ? "p-4 bg-[#2B076E] text-white rounded-2xl  flex items-center flex-col space-y-4 h-[400px]   w-[400px] lg:w-[300px] justify-center"
-                : "p-4 bg-white text-black rounded-2xl  flex items-center flex-col space-y-4 h-[400px] justify-center lg:w-[300px] w-[400px]"
+                ? "p-4 bg-[#2B076E] text-white rounded-2xl  flex items-center flex-col space-y-4 h-[400px] w-[300px]   sm:w-[400px] lg:w-[300px] justify-center"
+                : "p-4 bg-white text-black rounded-2xl  flex items-center flex-col space-y-4 h-[400px] justify-center lg:w-[300px]  w-[250px]   sm:w-[400px]"
             }
           >
             <Coin
@@ -250,8 +250,8 @@ function Header() {
             onClick={Eth}
             className={
               Two
-                ? "bg-[#2B076E] text-white rounded-2xl  flex items-center flex-col space-y-4 h-[400px]  w-[400px] lg:w-[300px] justify-center"
-                : "bg-white text-black rounded-2xl  flex items-center flex-col space-y-4 h-[400px]  w-[400px] lg:w-[300px] justify-center"
+                ? "bg-[#2B076E] text-white rounded-2xl  flex items-center flex-col space-y-4 h-[400px]   w-[250px]   sm:w-[400px] lg:w-[300px] justify-center"
+                : "bg-white text-black rounded-2xl  flex items-center flex-col space-y-4 h-[400px]   w-[250px]   sm:w-[400px] lg:w-[300px] justify-center"
             }
           >
             <Coin
@@ -281,8 +281,8 @@ function Header() {
             onClick={Lte}
             className={
               Tre
-                ? "bg-[#2B076E] text-white rounded-2xl  flex items-center flex-col space-y-4 h-[400px]  w-[400px] lg:w-[300px]   justify-center"
-                : "bg-white text-black rounded-2xl  flex items-center flex-col space-y-4 h-[400px]  w-[400px]  lg:w-[300px]  justify-center"
+                ? "bg-[#2B076E] text-white rounded-2xl  flex items-center flex-col space-y-4 h-[400px]   w-[250px]   sm:w-[400px] lg:w-[300px]   justify-center"
+                : "bg-white text-black rounded-2xl  flex items-center flex-col space-y-4 h-[400px]   w-[250px]   sm:w-[400px]  lg:w-[300px]  justify-center"
             }
           >
             <Coin
