@@ -44,7 +44,7 @@ function Header() {
 
   return (
     <header>
-      <section className="container mx-auto md:px-8">
+      <section className="container mx-auto  md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 py-3">
           <div className="flex flex-col space-y-8 max-w-md mx-auto py-20 ">
             <div className="bg-gray-600 rounded-3xl flex  text-xs items-center w-fit">
@@ -145,7 +145,7 @@ function Header() {
           </div>
         </div>
       </section>
-      <section className="container mx-auto my-10 ">
+      <section className="container mx-auto my-10 px-4 ">
         <div className=" md:grid-cols-2 grid-cols-1 gap-12 md:gap-8 py-10  px-4 grid ">
           <div data-aos="fade-up">
             <img src={Why} className="w-[90%]" alt="" />
@@ -214,7 +214,7 @@ function Header() {
             </p>
           </div>
         </div>
-        <div className="container mx-auto flex justify-around lg:px-8 items-center lg:flex-row flex-col space-y-6 lg:space-y-0 pt-80 lg:pt-40 ">
+        <div className="container mx-auto flex justify-around lg:px-8 items-center lg:flex-row flex-col space-y-20 lg:space-y-0 pt-80 pb-20 lg:pt-40 ">
           <div
             onClick={Bit}
             className={

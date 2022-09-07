@@ -20,7 +20,7 @@ function Navbar() {
           <img data-aos="fade-right" src={Logo} alt="" />{" "}
         </div>
         {/* DESKTOP NAV */}
-        <div data-aos="fade-left">
+        <div>
           <ul className="sm:flex hidden flex-row space-x-6 items-center">
             <li>
               <a href="/">Products</a>
@@ -55,8 +55,8 @@ function Navbar() {
         <div
           className={
             Open
-              ? "inset-0 translate-x-0 absolute ease-out bg-[#252540] duration-1000 sm:hidden z-50"
-              : "translate-x-[1000px] inset-0 ease-in absolute duration-1000 bg-[#252540] sm:hidden z-50 "
+              ? " translate-x-0 fixed inset-0  ease-out bg-[#252540] duration-1000 sm:hidden z-50"
+              : "translate-x-[1000px] fixed inset-0  ease-in  duration-1000 bg-[#252540] sm:hidden z-50 "
           }
         >
           <div className=" container mx-auto ">
