@@ -38,7 +38,7 @@ function Navbar() {
               <a href="/">Login</a>
             </li>
             <span className="font-bold text-xl">|</span>
-            <li className="bg-blue-500 px-4 py-1 font-semibold rounded-3xl">
+            <li className="bg-blue-500 px-4 py-1 hover:bg-gray-200 duration-400 ease-out font-semibold rounded-3xl">
               <a href="/">Register</a>
             </li>
           </ul>
@@ -73,17 +73,21 @@ function Navbar() {
               <li>
                 <a href="/">Contact</a>
               </li>
-              <li className="flex space-x-4 items-center">
-                <a href="/">Login</a>
+              <span className="flex space-x-4 items-center">
+                <li>
+                  <a href="/">Login</a>
+                </li>
 
                 <span className="font-bold text-xl text-gray-500">|</span>
-                <a
-                  className="bg-blue-400 px-3 py-[6px] rounded-2xl text-xl font-semibold"
-                  href="/"
-                >
-                  Register
-                </a>
-              </li>
+                <li>
+                  <a
+                    className="bg-blue-400 hover:bg-gray-200 duration-400 ease-out px-3 py-[6px] rounded-2xl text-xl font-semibold"
+                    href="/"
+                  >
+                    Register
+                  </a>
+                </li>
+              </span>
             </ul>
           </div>
         </div>
