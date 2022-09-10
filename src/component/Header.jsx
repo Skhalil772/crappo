@@ -15,7 +15,7 @@ import "aos/dist/aos.css";
 function Header() {
   useEffect(() => {
     Aos.init({
-      offset: 200,
+      offset: 100,
       duration: 1000,
       easing: "ease-out",
       delay: 200,
@@ -44,7 +44,7 @@ function Header() {
 
   return (
     <header>
-      <section className="container mx-auto  md:px-8">
+      <section className="container mx-auto lg:h-screen  md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-4 px-8 sm:px-0">
           <div className="flex flex-col space-y-8 max-w-md mx-auto py-20 ">
             <div className="bg-gray-600 rounded-3xl flex  text-xs items-center w-fit">
@@ -179,39 +179,45 @@ function Header() {
           similique temporibus dignissimos tempore odio?
         </p>
       </div>
-      <section className="h-fit lg:h-screen    bg-gray-200 relative  ">
-        <div className="bg-white rounded-2xl lg:w-fit sm:w-[80%]   absolute -top-[200px] text-black left-1/2 -translate-x-1/2 p-8  lg:p-12">
-          <div className="lg:flex-row flex flex-col lg:space-y-0 space-y-6 lg:space-x-8">
-            <input
-              className="outline-none border-b-[1px] text-xl lg:w-96 border-gray-400 placeholder:text-gray-700 placeholder:text-2xl p-1 "
-              placeholder="Enter your hash rate"
-              type="number"
-            />
-            <select
-              className="outline-none border-b-[1px] lg:w-60 border-gray-400 placeholder:text-2xl p-1"
-              name="type"
-              id="rate"
-            >
-              <option value="">TH/s</option>
-              <option value="H/s">H/s</option>
-              <option value="KH/s">KH/s</option>
-              <option value="MH/s">MH/s</option>
-              <option value="GH/s">GH/s</option>
-            </select>
-            <button className="px-3 rounded-2xl py-1 bg-blue-500 w-fit text-white">
-              Calculate
-            </button>
-          </div>
-          <div className="space-y-6 flex flex-col pt-6">
-            <h3 className="text-blue-500 text-2xl">
-              ESTIMATED 24 HOUR REVENUE:
-            </h3>
-            <span className="text-black font-bold text-4xl">
-              0.055 130 59 ETH <span className="text-blue-500">($1275)</span>
-            </span>
-            <p className="text-gray-500">
-              Revenue will change based on mining difficulty and Ethereum price.
-            </p>
+      <section className="h-fit lg:h-screen     bg-gray-200 relative  ">
+        <div className="   absolute -top-[200px] left-1/2 -translate-x-1/2">
+          <div
+            data-aos="zoom-in"
+            className="bg-white rounded-2xl lg:w-fit sm:w-[80%]  text-black  p-8  lg:p-12"
+          >
+            <div className="lg:flex-row flex flex-col lg:space-y-0 space-y-6 lg:space-x-8">
+              <input
+                className="outline-none border-b-[1px] text-xl lg:w-96 border-gray-400 placeholder:text-gray-700 md:placeholder:text-2xl p-1 "
+                placeholder="Enter your hash rate"
+                type="number"
+              />
+              <select
+                className="outline-none border-b-[1px] lg:w-60 border-gray-400 placeholder:text-2xl p-1"
+                name="type"
+                id="rate"
+              >
+                <option value="">TH/s</option>
+                <option value="H/s">H/s</option>
+                <option value="KH/s">KH/s</option>
+                <option value="MH/s">MH/s</option>
+                <option value="GH/s">GH/s</option>
+              </select>
+              <button className="px-3 rounded-2xl py-1 bg-blue-500 w-fit text-white">
+                Calculate
+              </button>
+            </div>
+            <div className="space-y-6 flex flex-col pt-6">
+              <h3 className="text-blue-500 text-2xl">
+                ESTIMATED 24 HOUR REVENUE:
+              </h3>
+              <span className="text-black font-bold text-4xl">
+                0.055 130 59 ETH <span className="text-blue-500">($1275)</span>
+              </span>
+              <p className="text-gray-500">
+                Revenue will change based on mining difficulty and Ethereum
+                price.
+              </p>
+            </div>
           </div>
         </div>
         <div className="container mx-auto flex justify-around lg:px-8 items-center lg:flex-row flex-col space-y-20 lg:space-y-0 pt-96 sm:pt-80 pb-20 lg:pt-40 ">

@@ -31,4 +31,5 @@ li:hover {
   color: rgb(96 165 250);
   transition: all 400ms ease-out;
   cursor: pointer;
+  transform: scale(1.05);
 }

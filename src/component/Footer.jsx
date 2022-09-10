@@ -17,15 +17,18 @@ function Footer() {
   useEffect(() => {
     Aos.init({
       offset: -20,
-      duration: 1000,
+      duration: 2000,
       easing: "ease-out",
       delay: 200,
     });
   }, []);
   return (
     <section>
-      <div>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-4 text-center container mx-auto px-8 ">
+      <div className="pt-28">
+        <div
+          data-aos="fade-up"
+          className="grid grid-cols-1 gap-4 md:grid-cols-4 text-center container mx-auto p-8 "
+        >
           <div className="w-fit mx-auto py-8">
             <img src={Logo} alt="" />
           </div>
@@ -75,41 +78,40 @@ function Footer() {
             </span>
             <ul className="flex space-x-4 w-fit mx-auto">
               <li>
-                <img className="w-24 h-16" src={Visa} alt="image" />
+                <img className="w-24 h-16" src={Visa} alt="methods" />
               </li>
               <li>
-                <img className="w-24 h-16" src={Master} alt="image" />
+                <img className="w-24 h-16" src={Master} alt="methods" />
               </li>
               <li>
-                <img className="w-24 h-16" src={Bit} alt="image" />
+                <img className="w-24 h-16" src={Bit} alt="methods" />
               </li>
             </ul>
           </div>
         </div>
-        <div className="py-10 flex md:flex-row space-y-4  items-center flex-col  justify-around">
+        <div
+          data-aos="zoom-in"
+          className="py-10 flex md:flex-row space-y-4  items-center flex-col  justify-around"
+        >
           <div className="">
             <p className="text-xl text-start">
               © 2022 CRAPPO. All rights reserved.
             </p>
           </div>
-          <div data-aos="fade-up" className="flex flex-row space-x-4">
+          <div className="flex flex-row space-x-4">
             <a href="/">
               <FaYoutube size={25} />
             </a>
             <a href="/">
-              {" "}
               <FaWhatsapp size={25} />
             </a>
             <a href="/">
-              {" "}
               <FaInstagram size={25} />
             </a>
             <a href="/">
-              {" "}
               <FaTwitter size={25} />
             </a>
             <a href="/">
-              {" "}
               <FaLinkedin size={25} />
             </a>
           </div>

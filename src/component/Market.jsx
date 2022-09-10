@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 function Market() {
   useEffect(() => {
     Aos.init({
-      offset: 200,
+      offset: 100,
       duration: 1000,
       easing: "ease-out",
       delay: 200,
@@ -17,7 +17,7 @@ function Market() {
   return (
     <>
       <section className="container mx-auto py-12">
-        <div className="flex justify-center md:pb-20 pb-12  px-6">
+        <div className="flex justify-center md:py-20 py-12  px-6">
           <h2 className="text-3xl max-w-2xl  text-center">
             Market Sentiments, Portfolio, And Run The Infrastructure Of Your
             Choice
@@ -45,7 +45,7 @@ function Market() {
           </div>
         </div>
       </section>
-      <section className="lg:flex-row flex-col-reverse flex p-6 gap-6 container mx-auto ">
+      <section className="lg:flex-row flex-col-reverse flex px-6 py-12 gap-6 container mx-auto ">
         <div data-aos="fade-up" className="lg:w-[55%] w-[95%] ">
           <img src={Stats} alt="" />
         </div>
@@ -64,6 +64,31 @@ function Market() {
           >
             Learn more
           </a>
+        </div>
+      </section>
+      <section className="container mx-auto px-2 py-12 mb-12">
+        <div className="md:flex-row flex flex-col space-y-20 md:space-y-0 items-center justify-around ">
+          <div
+            data-aos="zoom-in"
+            className="md:w-[35%] w-[80%] flex flex-col space-y-6 self-center"
+          >
+            <h3 className="text-2xl font-semibold">
+              Grow Your Profit And Track Your Investments
+            </h3>
+            <p className="text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit enim
+              odit distinctio dolore id incidunt?
+            </p>
+            <a
+              className="px-4 py-2 w-fit text-xs rounded-3xl bg-blue-500"
+              href="/"
+            >
+              Learn more
+            </a>
+          </div>
+          <div data-aos="fade-up" className="md:w-[50%] ">
+            <img src={List} alt="" />
+          </div>
         </div>
       </section>
     </>
