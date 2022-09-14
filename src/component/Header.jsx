@@ -15,7 +15,7 @@ import "aos/dist/aos.css";
 function Header() {
   useEffect(() => {
     Aos.init({
-      offset: 100,
+      offset: 200,
       duration: 1000,
       easing: "ease-out",
       delay: 200,

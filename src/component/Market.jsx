@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 function Market() {
   useEffect(() => {
     Aos.init({
-      offset: 100,
+      offset: 200,
       duration: 1000,
       easing: "ease-out",
       delay: 200,
