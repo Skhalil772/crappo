@@ -1,7 +1,6 @@
 import Hero from "../assets/hero-img.png";
 import Why from "../assets/why-img.png";
 import Arrow from "../assets/Vector.svg";
-import Profile from "../assets/icon-1.svg";
 import Icon from "../assets/icon-1.svg";
 import Name from "../assets/Bar.png";
 import Coin from "./Coin";
@@ -221,14 +220,14 @@ function Header() {
           </div>
         </div>
         <div className="container mx-auto flex justify-around lg:px-8 items-center lg:flex-row flex-col space-y-20 lg:space-y-0 pt-96 sm:pt-80 pb-20 lg:pt-40 ">
-          <div
+          <a
             data-aos="fade-up"
-            onClick={Bit}
-            className={
-              One
-                ? "p-4 bg-[#2B076E] text-white rounded-2xl  flex items-center flex-col space-y-4 h-[400px] w-[300px]   sm:w-[400px] lg:w-[300px] justify-center"
-                : "p-4 bg-white text-black rounded-2xl  flex items-center flex-col space-y-4 h-[400px] justify-center lg:w-[300px]  w-[300px]   sm:w-[400px]"
-            }
+            href="/"
+            onFocus={Bit}
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+            className="p-4 focus:bg-[#2B076E] bg-white focus:text-white text-black rounded-2xl  flex items-center flex-col space-y-4 h-[400px] w-[300px]   sm:w-[400px] lg:w-[300px] justify-center"
           >
             <Coin
               Icon={Bitcoin}
@@ -252,15 +251,15 @@ function Header() {
                 <FaChevronRight />
               </a>
             )}
-          </div>
-          <div
+          </a>
+          <a
             data-aos="zoom-in"
-            onClick={Eth}
-            className={
-              Two
-                ? "bg-[#2B076E] text-white rounded-2xl  flex items-center flex-col space-y-4 h-[400px]   w-[300px]   sm:w-[400px] lg:w-[300px] justify-center"
-                : "bg-white text-black rounded-2xl  flex items-center flex-col space-y-4 h-[400px]   w-[300px]   sm:w-[400px] lg:w-[300px] justify-center"
-            }
+            href="/"
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+            className="p-4 focus:bg-[#2B076E] bg-white focus:text-white text-black rounded-2xl  flex items-center flex-col space-y-4 h-[400px] w-[300px]   sm:w-[400px] lg:w-[300px] justify-center"
+            onFocus={Eth}
           >
             <Coin
               Icon={Ethereum}
@@ -284,15 +283,15 @@ function Header() {
                 <FaChevronRight />
               </a>
             )}
-          </div>
-          <div
+          </a>
+          <a
             data-aos="fade-up"
-            onClick={Lte}
-            className={
-              Tre
-                ? "bg-[#2B076E] text-white rounded-2xl  flex items-center flex-col space-y-4 h-[400px]   w-[300px]   sm:w-[400px] lg:w-[300px]   justify-center"
-                : "bg-white text-black rounded-2xl  flex items-center flex-col space-y-4 h-[400px]   w-[300px]   sm:w-[400px]  lg:w-[300px]  justify-center"
-            }
+            href="/"
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+            className="p-4 focus:bg-[#2B076E] bg-white focus:text-white text-black rounded-2xl  flex items-center flex-col space-y-4 h-[400px] w-[300px]   sm:w-[400px] lg:w-[300px] justify-center"
+            onFocus={Lte}
           >
             <Coin
               Icon={Litecoin}
@@ -316,7 +315,7 @@ function Header() {
                 <FaChevronRight />
               </a>
             )}
-          </div>
+          </a>
         </div>
       </section>
     </header>
